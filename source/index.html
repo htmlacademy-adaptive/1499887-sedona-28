@@ -1,129 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Sedona</title>
-  </head>
-  <body>
-    <!-- Шапка сайта -->
-    <header class="hedaer">
-      <h1 class="header__title title-hidden">Sedona</h1>
-      <nav class="header__navigation">
-      <ul class="navigation-list navigation-list-left">
-        <li><a class="navigation-list__link">ГЛАВНАЯ</li>
-        <li><a class="navigation-list__link">ФОТО И ВИДЕО</li>
-      <ul class="navigation-list navigation-list-right">
-        <li><a class="navigation-list__link">ФОРМА ОТЗЫВА</li>
-        <li class="navigation-list__item"><a class="navigation-list__link">HTML ACADEMY</li>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="header__navigation nav">
+      <ul class="nav__list navigation-list">
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">ГЛАВНАЯ</a></li>
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">ФОТО И ВИДЕО</a></li>
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">ФОРМА ОТЗЫВА</a></li>
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">HTML ACADEMY</a></li>
       </ul>
-      <img class="header__logo">
-      </nav>
-    </header>
-
-    <!-- Основной контент страницы -->
-    <main>
-      <!-- Баннер главной страницы -->
-      <section class="section main-page-banner">
-        <h1>
-
-        </h1>
-      </section>
-
-      <!-- Преимущество Sedona -->
-      <section class="section benefits">
-        <div class="section__topic">
-        <h2 class="topic-headline">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-        <p class="topic-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-
-      <!-- Первое преимущество -->
-      <section class="benefits__wrapper benefits__item--content-left ">
-        <div class="benefit">
-        <span class="benefit__headline--contrast">Настоящий городок</span>
-        <p class="benefit__number--contrast">№1</p>
-        <p class="benefit__text--contrast">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-        </div>
-      </section>
+    </nav>
+    <a class="header-logo-link"><img class="header-logo-link__image" src="img/header_logo.svg" alt="Логотип Sedona"></a>
+  </header>
 
 
-      <section class="benefits_wrapper benefits-cards">
-        <div class="benefit benefits-cards__wrapper">
-          <img class="benefits-card-image">
-          <span class="benefit__headline">ЖИЛЬЕ</span>
-          <p class="benefit__text text-default">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
-        </div>
+  <main>
+    <h1 class="visually-hidden">Sedona</h1>
 
-        <div class="benefit benefits-cards__wrapper">
-          <img class="benefits-card-image">
-          <span class="benefit__headline">ЕДА</span>
-          <p class="benefit__text text-default">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
-        </div>
-
-        <div class="benefit benefits-cards__wrapper">
-          <img class="benefits-card-image">
-          <span class="benefit__headline">СУВЕНИРЫ</span>
-          <p class="benefit__text text-default">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
-        </div>
-      </section>
-
-      <!-- Второе преимущество -->
-      <section class="benefits__wrapper benefits__item--content-right">
-        <div class="benefit">
-        <span class="benefit__headline--contrast">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</span>
-        <p class="benefit__number--contrast">№2</p>
-        <p class="benefit__text--contrast text-default">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ КОНЕЧНО</p>
-        </div>
-      </section>
-
-      <!-- Остальные преимущества в одном блоке -->
-      <section class="benefits__wrapper benefits__list-wrapper--row">
-        <div class="benefits-list__item benefit">
-          <span class="benefit__headline">Небольшая площадь</span>
-          <p class="benefit__number">№3</p>
-          <p class="benefit__text text-default">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
-        </div>
-
-        <div class="benefits-list__item benefit">
-          <span class="benefit__headline">КРАСИВАЯ ДОРОГА</span>
-          <p class="benefit__number">№4</p>
-          <p class="benefit__text text-default">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
-        </div>
-
-        <div class="benefits-list__item benefit">
-          <span class="benefit__headline">МАЛО ТУРИСТОВ</span>
-          <p class="benefit__number">№5</p>
-          <p class="benefit__text text-default">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
-        </div>
-      </section>
-
+    <!-- Баннер главной страницы -->
+    <section class="section main-page-banner">
+      <h2 class="visually-hidden">Welcome to Sedona</h2>
     </section>
 
-      <!-- Поиск гостиницы -->
-      <section class="section link-section">
-        <div class="section__topic">
-        <h2 class="topic-headline">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="text-default">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        </div>
-        <a class="link-section__link link-button">Найти гостиницу</a>
-      </section>
+    <!-- Преимущества Sedona -->
+    <section class="section benefits">
+      <div class="section__topic topic">
+        <h2 class="topic__headline">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+        <p class="topic__text text-default">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
 
-      <!-- Карта -->
-      <section class="section map-section">
+      <ol class="benefits__benefits-list benefits-list">
 
-      </section>
-    </main>
+        <!-- Первое преимущество -->
+        <li class="benefits-list__item benefits-list__item--content-left benefits-item">
 
-    <footer class="footer">
-      <a class="footer__link"></a>
-      <ul class="footer__socitems-list socitems-list">
-        <li class="socitems-item"><a class="socitem-link"></a></li>
-        <li class="socitems-item"><a class="socitem-link"></a></li>
-        <li class="socitems-item"><a class="socitem-link"></a></li>
-      </ul>
+          <div class="benefits-item__container benefits-item__container--contrast-text benefit">
+            <span class="benefit__headline">Настоящий городок</span>
+            <p class="benefit__number">№1</p>
+            <p class="benefit__text text-default">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
 
-      <a class="footer__link">
-      </a>
-    </footer>
 
-  </body>
+          <ul class="benefits-list__nested-list benefit-nested-list">
+
+            <li class="benefit-nested-list__item benefit">
+              <img class="benefit__image" src="img/main/icon-house.svg" alt="Иконка дома">
+              <span class="benefit__headline">ЖИЛЬЕ</span>
+              <p class="benefit__text text-default">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+            </li>
+
+            <li class="benefit-nested-list__item benefit">
+              <img class="benefit__image" src="img/main/icon-burger.svg" alt="Иконка бургера">
+              <span class="benefit__headline">ЕДА</span>
+              <p class="benefit__text text-default">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+            </li>
+
+            <li class="benefit-nested-list__item benefit">
+              <img class="benefit__image" src="img/main/icon-gift.svg" alt="Иконка подарочной коробки">
+              <span class="benefit__headline">СУВЕНИРЫ</span>
+              <p class="benefit__text text-default">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <!-- Второе преимущество -->
+        <li class="benefits-list__item benefits-list__item--content-right benefits-item">
+          <div class="benefits-item__container benefits-item__container--contrast-text benefit">
+            <span class="benefit__headline">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</span>
+            <p class="benefit__number">№2</p>
+            <p class="benefit__text text-default">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ КОНЕЧНО</p>
+          </div>
+        </li>
+
+        <!-- Остальные преимущества в одном блоке -->
+        <li class="benefits-list__item benefits-list__item--bg-gray benefits-item">
+          <div class="benefits-item__container benefit">
+            <span class="benefit__headline">Небольшая площадь</span>
+            <p class="benefit__number">№3</p>
+            <p class="benefit__text text-default">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </div>
+        </li>
+
+        <li class="benefits-list__item benefits-list__item--bg-gray benefits-item">
+          <div class="benefits-item__container benefit">
+            <span class="benefit__headline">КРАСИВАЯ ДОРОГА</span>
+            <p class="benefit__number">№4</p>
+            <p class="benefit__text text-default">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+          </div>
+        </li>
+
+        <li class="benefits-list__item benefits-list__item--bg-gray benefits-item">
+          <div class="benefits-item__container benefit">
+            <span class="benefit__headline">МАЛО ТУРИСТОВ</span>
+            <p class="benefit__number">№5</p>
+            <p class="benefit__text text-default">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+
+    <!-- Поиск гостиницы -->
+    <section class="section link-section">
+      <div class="section__topic topic">
+        <h2 class="topic__headline">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="topic__text text-default">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ
+          ГОСТИНИЦ В СЕДОНЕ</p>
+      </div>
+      <a class="link-section__link link-button" href="#">Найти гостиницу</a>
+    </section>
+
+    <!-- Карта -->
+    <section class="section map-section">
+      <h2 class="visually-hidden">Where is Sedona?</h2>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__hash" href="#">#visitsedona</a>
+    <ul class="footer__socitems-list socitems-list">
+      <li class="socitems-list__item"><a class="socitems-list__link" href="#"><img class="footer-socitem-icon"
+            src="img/social.svg" alt="ВКонтакте"></a></li>
+      <li class="socitems-list__item"><a class="socitems-list__link" href="#"><img class="footer-socitem-icon"
+            src="img/social-1.svg" alt="Телеграм"></a></li>
+      <li class="socitems-list__item"><a class="socitems-list__link" href="#"><img class="footer-socitem-icon"
+            src="img/social-2.svg" alt="Ютуб"></a></li>
+    </ul>
+
+    <a class="footer__copyright">Разработано<img class="academy-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy"></a>
+  </footer>
+
+</body>
+
 </html>

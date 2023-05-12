@@ -1,127 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Sedona</title>
-  </head>
-  <body>
-    <!-- Шапка сайта -->
-    <header class="header">
-      <h1 class="header__title visually-hidden">Sedona</h1>
-      <nav class="header__navigation">
-      <ul class="navigation-list navigation-list-left">
-        <li><a class="navigation-list__link">ГЛАВНАЯ</li>
-        <li><a class="navigation-list__link">ФОТО И ВИДЕО</li>
-      <ul class="navigation-list navigation-list-right">
-        <li><a class="navigation-list__link">ФОРМА ОТЗЫВА</li>
-        <li class="navigation-list__item"><a class="navigation-list__link">HTML ACADEMY</li>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="header__navigation nav">
+      <ul class="nav__list navigation-list">
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">ГЛАВНАЯ</a></li>
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">ФОТО И ВИДЕО</a></li>
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">ФОРМА ОТЗЫВА</a></li>
+        <li class="navigation-list__item"><a class="navigation-list__link" href="#">HTML ACADEMY</a></li>
       </ul>
-      <img class="header__logo">
-      </nav>
-    </header>
+    </nav>
+    <a class="header-logo-link"><img class="header-logo-link__image" src="img/header_logo.svg" alt="Логотип Sedona"></a>
+  </header>
 
-    <!-- Основной контент страницы -->
-    <main>
-      <!-- Баннер страницы отзыва-->
-      <section class="section form-page-banner">
-        <h1>
+  <main>
+    <h1 class="page-title visually-hidden">Sedona Reviews</h1>
 
-        </h1>
-      </section>
+    <!-- Баннер страницы отзыва-->
+    <section class="section page-banner form-page-banner">
+      <h2 class="visually-hidden">Sedona banner</h2>
+    </section>
 
-      <section class="section review">
-        <div class="review__topic section__topic">
-          <h2 class="topic-headline">Оставьте свой отзыв</h2>
-          <p class="text-default">Помогите нашим отелям стать лучше! оставьте отзыв о них,а также о посещенных вами достопримечательностях </p>
-        </div>
+    <section class="section review">
+      <div class="section__topic topic">
+        <h2 class="topic__headline">Оставьте свой отзыв</h2>
+        <p class="topic__text text-default">Помогите нашим отелям стать лучше! оставьте отзыв о них,а также о посещенных
+          вами достопримечательностях </p>
+      </div>
 
-          <form method="post" class="form review__form">
+      <form method="post" class="form review__form" action="https://echo.htmlacademy.ru/">
 
-        <section class="input-section form__container--splitted personal-info">
+        <div class="form__container form__container--splitted input-section">
 
-        <div class="input-section__wrapper--column full-name">
-          <h3 class="container-headline">Представьтесь:</h3>
-          <label class="form-label" for="name">Имя*:</label>
-          <input class="text-input full-name__input" id="name" type="text">
+          <fieldset class="input-section__wrapper input-section__wrapper--column input-fieldset">
+            <h3 class="input-fieldset__headline">Представьтесь:</h3>
 
-          <label class="form-label" for="second-name">Фамилия*:</label>
-          <input class="text-input full-name__input" id="second-name" type="text">
-
-          <label class="form-label" for="surname">Отчество:</label>
-          <input class="text-input full-name__input" id="surname" type="text">
-        </div>
-
-        <div class="input-section__wrapper--column contacts">
-          <h3 class="container-headline">Контактная информация:</h3>
-          <label class="form-label" for="phone">Контактный телефон*:</label>
-          <input class="text-input full-name__input" id="phone" type="number">
-
-          <label class="form-label" for="email">Электронная почта*:</label>
-          <input class="text-input full-name__input" id="email" type="email">
-        </div>
-
-      </section>
-
-        <section class="input-section">
-          <h3 class="container-headline">Ваше общее впечатление:</h3>
-
-          <div class="input-section__wrapper--row radiobuttons">
-          <input class="radio-input" id="good-impression" type="radio">
-          <label class="form-label label-bold" for="good-impression">Скорее положительное</label>
-
-          <input class="radio-input" id="bad-impression" type="radio">
-          <label class="form-label label-bold" for="bad-impression">Скорее отрицательное</label>
-
-          <input class="radio-input" id="no-answer" type="radio">
-          <label class="form-label label-bold" for="no-answer">Затрудняюсь ответить</label>
-          </div>
-        </section>
-
-        <section class="input-section">
-          <h3 class="container-headline">Посещенные достопримечательности:</h3>
-
-          <div class="input-section__wrapper--row checkboxes">
-            <input class="radio-input" id="devil`s bridge" type="radio">
-            <label class="form-label label-bold" for="devil`s bridge">Мост Дьявола</label>
-
-            <input class="radio-input" id="bell-mountain" type="radio">
-            <label class="form-label label-bold" for="bell-mountain">Гора-Колокол</label>
-
-            <input class="radio-input" id="slide-park" type="radio">
-            <label class="form-label label-bold" for="slide-park">Слайд-парк</label>
-
-            <input class="radio-input" id="red rocks" type="radio">
-            <label class="form-label label-bold" for="red rocks">Красные скалы</label>
+            <div class="input-fieldset__field input-field">
+              <label class="form-label input-field__label" for="name">Имя*:</label>
+              <input class="text-input input-field__input" id="name" type="text" required>
             </div>
-        </section>
 
-        <section class="input-section">
+            <div class="input-fieldset__field input-field">
+              <label class="form-label input-field__label" for="second-name">Фамилия*:</label>
+              <input class="text-input input-field__input" id="second-name" type="text" required>
+            </div>
+
+            <div class="input-fieldset__field input-field">
+              <label class="form-label input-field__label" for="surname">Отчество:</label>
+              <input class="text-input input-field__input" id="surname" type="text">
+            </div>
+          </fieldset>
+
+          <fieldset class="input-section__wrapper input-section__wrapper--column input-fieldset">
+            <h3 class="input-fieldset__headline">Контактная информация:</h3>
+            <div class="input-fieldset__field input-field">
+              <label class="form-label input-field__label" for="phone">Контактный телефон*:</label>
+              <input class="text-input input-field__input" id="phone" type="number" required>
+            </div>
+
+            <div class="input-fieldset__field input-field">
+              <label class="form-label input-field__label" for="email">Электронная почта*:</label>
+              <input class="text-input input-field__input" id="email" type="email" required>
+            </div>
+          </fieldset>
+
+        </div>
+
+        <fieldset class="form__container input-fieldset">
+          <h3 class="input-fieldset__headline input-fieldset__headline--decorated">Ваше общее впечатление:</h3>
+
+          <div class="input-fieldset__field input-field-radio">
+            <input class="radio-input" id="good-impression" type="radio">
+            <label class="form-label label-bold" for="good-impression">Скорее положительное</label>
+          </div>
+
+          <div class="input-fieldset__field input-field-radio">
+            <input class="radio-input" id="bad-impression" type="radio">
+            <label class="form-label label-bold" for="bad-impression">Скорее отрицательное</label>
+          </div>
+
+          <div class="input-fieldset__field input-field-radio">
+            <input class="radio-input" id="no-answer" type="radio">
+            <label class="form-label label-bold" for="no-answer">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__container input-fieldset">
+          <h3 class="input-fieldset__headline input-fieldset__headline--decorated">Посещенные достопримечательности:
+          </h3>
+
+          <div class="input-fieldset__field input-field-checkbox">
+            <input class="checkbox-input" id="devil-bridge" type="checkbox">
+            <label class="form-label label-bold" for="devil-bridge">Мост Дьявола</label>
+          </div>
+
+          <div class="input-fieldset__field input-field-checkbox">
+            <input class="checkbox-input" id="bell-mountain" type="checkbox">
+            <label class="form-label label-bold" for="bell-mountain">Гора-Колокол</label>
+          </div>
+
+          <div class="input-fieldset__field input-field-checkbox">
+            <input class="checkbox-input" id="slide-park" type="checkbox">
+            <label class="form-label label-bold" for="slide-park">Слайд-парк</label>
+          </div>
+
+          <div class="input-fieldset__field input-field-checkbox">
+            <input class="checkbox-input" id="red-rocks" type="checkbox">
+            <label class="form-label label-bold" for="red-rocks">Красные скалы</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="input-container">
           <h3 class="container-headline">Опишите свои эмоции:</h3>
           <label class="hidden" for="textarea"></label>
-          <input class="" type="text" id="textarea">
-        </section>
+          <input class="input-container__input" type="text" id="textarea">
+        </fieldset>
 
-        <div class="submit-wrapper">
-          <button class="button submit-wrapper__submit" type="submit">отправить отзыв</button>
-          <p class="text-default submit-wrapper__clue">*- обязательное поле</p>
-        </div>
+      </form>
+    </section>
 
-        </form>
-      </section>
+    <div class="submit-wrapper">
+      <button class="button submit-wrapper__submit" type="submit">отправить отзыв</button>
+      <p class="text-default submit-wrapper__clue">*- обязательное поле</p>
+    </div>
 
-    </main>
 
-    <footer class="footer">
-      <a class="footer__link"></a>
-      <ul class="footer__socitems-list socitems-list">
-        <li class="socitems-item"><a class="socitem-link"></a></li>
-        <li class="socitems-item"><a class="socitem-link"></a></li>
-        <li class="socitems-item"><a class="socitem-link"></a></li>
-      </ul>
+  </main>
 
-      <a class="footer__link">
-      </a>
-    </footer>
+  <footer class="footer">
+    <a class="footer__hash" href="#">#visitsedona</a>
+    <ul class="footer__socitems-list socitems-list">
+      <li class="socitems-list__item"><a class="socitems-list__link" href="#"><img class="footer-socitem-icon"
+            src="img/social.svg" alt="ВКонтакте"></a></li>
+      <li class="socitems-list__item"><a class="socitems-list__link" href="#"><img class="footer-socitem-icon"
+            src="img/social-1.svg" alt="Телеграм"></a></li>
+      <li class="socitems-list__item"><a class="socitems-list__link" href="#"><img class="footer-socitem-icon"
+            src="img/social-2.svg" alt="Ютуб"></a></li>
+    </ul>
 
-  </body>
-  </html>
+    <a class="footer__copyright">Разработано<img class="academy-logo" src="img/htmlacademy.svg"
+        alt="Логотип HTML Academy"></a>
+  </footer>
+
+</body>
+
+</html>
