@@ -24,7 +24,6 @@
   <main>
     <h1 class="page-title visually-hidden">Sedona Reviews</h1>
 
-    <!-- Баннер страницы отзыва-->
     <section class="section page-banner form-page-banner">
       <h2 class="visually-hidden">Sedona banner</h2>
     </section>
@@ -36,26 +35,40 @@
           вами достопримечательностях </p>
       </div>
 
+      <section class="review__pop-up pop-up visually-hidden">
+        <h3 class="container-title pop-up__title">Что-то пошло не так!</h3>
+        <p class="text-default pop-up_text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="button pop-up__submit" type="button">ОК</button>
+      </section>
+
+      <section class="review__pop-up pop-up visually-hidden">
+        <h3 class="container-title pop-up__title">Ваш отзыв отправлен!</h3>
+        <p class="text-default pop-up_text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="pop-up__submit-container submit-container">
+        <button class="button submit-container__submit" type="button">ОК</button>
+        </div>
+      </section>
+
       <form method="post" class="form review__form" action="https://echo.htmlacademy.ru/">
 
         <div class="form__container form__container--splitted input-section">
 
           <fieldset class="input-section__wrapper input-section__wrapper--column input-fieldset">
-            <h3 class="input-fieldset__headline">Представьтесь:</h3>
+            <h3 class="container-title input-fieldset__headline ">Представьтесь:</h3>
 
             <div class="input-fieldset__field input-field">
               <label class="form-label input-field__label" for="name">Имя*:</label>
-              <input class="text-input input-field__input" id="name" type="text" required>
+              <input class="text-input input-field__input" id="name" name="name" type="text" required>
             </div>
 
             <div class="input-fieldset__field input-field">
               <label class="form-label input-field__label" for="second-name">Фамилия*:</label>
-              <input class="text-input input-field__input" id="second-name" type="text" required>
+              <input class="text-input input-field__input" id="second-name" name="second-name" type="text" required>
             </div>
 
             <div class="input-fieldset__field input-field">
               <label class="form-label input-field__label" for="surname">Отчество:</label>
-              <input class="text-input input-field__input" id="surname" type="text">
+              <input class="text-input input-field__input" id="surname" name="surname" type="text">
             </div>
           </fieldset>
 
@@ -63,76 +76,71 @@
             <h3 class="input-fieldset__headline">Контактная информация:</h3>
             <div class="input-fieldset__field input-field">
               <label class="form-label input-field__label" for="phone">Контактный телефон*:</label>
-              <input class="text-input input-field__input" id="phone" type="number" required>
+              <input class="text-input input-field__input" id="phone" name="phone" type="number" required placeholder="Введите телефон">
             </div>
 
             <div class="input-fieldset__field input-field">
               <label class="form-label input-field__label" for="email">Электронная почта*:</label>
-              <input class="text-input input-field__input" id="email" type="email" required>
+              <input class="text-input input-field__input" id="email" name="e-mail" type="email" required placeholder="Введите e-mail">
             </div>
           </fieldset>
-
         </div>
 
         <fieldset class="form__container input-fieldset">
-          <h3 class="input-fieldset__headline input-fieldset__headline--decorated">Ваше общее впечатление:</h3>
+          <h3 class="container-title input-fieldset__headline input-fieldset__headline--decorated">Ваше общее впечатление:</h3>
 
           <div class="input-fieldset__field input-field-radio">
-            <input class="radio-input" id="good-impression" type="radio">
+            <input class="radio-input" id="good-impression" name="impression-good" type="radio">
             <label class="form-label label-bold" for="good-impression">Скорее положительное</label>
           </div>
 
           <div class="input-fieldset__field input-field-radio">
-            <input class="radio-input" id="bad-impression" type="radio">
+            <input class="radio-input" id="bad-impression" name="impression-bad" type="radio">
             <label class="form-label label-bold" for="bad-impression">Скорее отрицательное</label>
           </div>
 
           <div class="input-fieldset__field input-field-radio">
-            <input class="radio-input" id="no-answer" type="radio">
+            <input class="radio-input" id="no-answer" name="no-answer" type="radio">
             <label class="form-label label-bold" for="no-answer">Затрудняюсь ответить</label>
           </div>
         </fieldset>
 
         <fieldset class="form__container input-fieldset">
-          <h3 class="input-fieldset__headline input-fieldset__headline--decorated">Посещенные достопримечательности:
+          <h3 class="container-title input-fieldset__headline input-fieldset__headline--decorated">Посещенные достопримечательности:
           </h3>
 
           <div class="input-fieldset__field input-field-checkbox">
-            <input class="checkbox-input" id="devil-bridge" type="checkbox">
+            <input class="checkbox-input" id="devil-bridge" name="visited-bridge" type="checkbox">
             <label class="form-label label-bold" for="devil-bridge">Мост Дьявола</label>
           </div>
 
           <div class="input-fieldset__field input-field-checkbox">
-            <input class="checkbox-input" id="bell-mountain" type="checkbox">
+            <input class="checkbox-input" id="bell-mountain" name="visited-mountain" type="checkbox">
             <label class="form-label label-bold" for="bell-mountain">Гора-Колокол</label>
           </div>
 
           <div class="input-fieldset__field input-field-checkbox">
-            <input class="checkbox-input" id="slide-park" type="checkbox">
+            <input class="checkbox-input" id="slide-park" name="visited-park" type="checkbox">
             <label class="form-label label-bold" for="slide-park">Слайд-парк</label>
           </div>
 
           <div class="input-fieldset__field input-field-checkbox">
-            <input class="checkbox-input" id="red-rocks" type="checkbox">
+            <input class="checkbox-input" id="red-rocks" name="visited-rocks" type="checkbox">
             <label class="form-label label-bold" for="red-rocks">Красные скалы</label>
           </div>
-
         </fieldset>
 
         <fieldset class="input-container">
           <h3 class="container-headline">Опишите свои эмоции:</h3>
-          <label class="hidden" for="textarea"></label>
-          <input class="input-container__input" type="text" id="textarea">
+          <input class="input-container__input" type="text" id="textarea" name="emotions-description" placeholder="Опишите подробно все свои восторги">
         </fieldset>
 
+        <div class="submit-wrapper">
+          <button class="button submit-wrapper__submit" name="form-page-submit" type="submit">отправить отзыв</button>
+          <p class="text-default submit-wrapper__clue">*- обязательное поле</p>
+        </div>
       </form>
     </section>
-
-    <div class="submit-wrapper">
-      <button class="button submit-wrapper__submit" type="submit">отправить отзыв</button>
-      <p class="text-default submit-wrapper__clue">*- обязательное поле</p>
-    </div>
-
 
   </main>
 
